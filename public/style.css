@@ -7,3 +7,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: rgb(109, 109, 146);
 }
+
+#map {
+  height: 100vh;
+  width: 100vw;
+}
