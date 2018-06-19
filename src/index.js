@@ -1,5 +1,7 @@
-// console.log("Index.js");
+// console.log("THIS IS Index.js");
+
 const mapboxgl = require("mapbox-gl");
+const buildMarker = require("./marker")
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FzaGEtaGF2aWEiLCJhIjoiY2pkdGN3MW1hMHpzNDJ4bnk4NzBnOXVzeSJ9.9a0w0WPYRY4qJC0dDSUnKg';
 
@@ -9,3 +11,6 @@ const map = new mapboxgl.Map({
   zoom: 12, // starting zoom
   style: "mapbox://styles/mapbox/streets-v10" // mapbox has lots of different map styles available.
 });
+
+const marker = buildMarker("activity", [-74.009151, 40.705086]);marker.addTo(map);
+
