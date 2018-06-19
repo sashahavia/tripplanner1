@@ -8,7 +8,63 @@ body {
   background-color: rgb(109, 109, 146);
 }
 
+#navbar {
+  /* overflow: hidden; */
+  background-color: rgb(250, 140, 37);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5%;
+  z-index: 2;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 #map {
   height: 100vh;
   width: 100vw;
+  z-index: 1;
+}
+
+.flexcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  top: 5%;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.item {
+  width: 30%;
+  height: 45%;
+  background-color: aquamarine
+}
+
+#options {
+  padding: 14px 16px;
+}
+
+#itinerary {
+  height:10%;
+  width: 100%;
+  padding: 14px 16px;
+  background-color: orange;
 }
